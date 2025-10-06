@@ -27,4 +27,11 @@ public class Monster {
     public double damage () {return Math.round(damage * 100.0 )/100.0;}
     public int speed () { return this.speed;}
     public String special (){ return this.special;}
+
+    // Mutator meathod
+    public void takedamage(int dmg){
+        health -= damage;
+    }
+
+    
 }
